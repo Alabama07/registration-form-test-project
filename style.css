@@ -1,0 +1,262 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(img/img1.akspic.ru-prostranstvo-kraska-purpurnyj_cvet-krasnyj_cvet-rozovyj-5664x3776.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat:no-repeat ;
+}
+header{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    backdrop-filter: blur(2px);
+    background: transparent;
+}
+
+.logo{
+    font-size: 25px;
+    color: white;
+    padding: 10px;
+}
+.nav{
+    display: flex;
+    position: absolute;
+    left: 20%;
+    top: 20px ;
+}
+
+.nav li{
+    padding: 0px 20px;
+    font-size: 20px;
+    list-style-type: none;
+    text-align: center;
+}
+
+.nav a{
+    text-decoration: none;
+    color: white;
+}
+
+.registration{
+    position: absolute;
+    right: 1%;
+}
+
+.btn-login{
+    padding: 5px 20px;
+    font-size: 20px;
+    background-color: rgb(97, 165, 125);
+    border: 1px solid rgb(97, 165, 125);
+}
+
+.btn-login:hover{
+    box-shadow: 0 0 0 1px rgb(97, 165, 125) ;
+    
+}
+
+.btn-registration{
+    padding: 5px 20px;
+    font-size: 20px;
+    background-color: rgb(77, 101, 153);
+    border: 1px solid rgb(77, 101, 153);
+
+}
+
+.btn-registration:hover{
+    box-shadow: 0 0 0 1px rgb(77, 101, 153); ;
+  
+}
+.modal-login{
+    position: absolute;
+    width: 20%;
+    height:50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    top: 20%;
+    left: 40%;
+    padding: 10px 10px;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    background: transparent;
+    display: none;      
+
+}
+
+.btn-close{
+   font-size: 25px;
+   width: 40px;
+   height: 30px;
+   border: none;
+   position:absolute;
+   right: 0px;
+   top: 0px;
+   overflow: hidden;
+   border-top-right-radius: 20px;
+   border-bottom-left-radius:20px;
+   background-color: transparent;
+}
+
+.logo-wrap{
+    color: rgb(94, 83, 93);
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+form{
+    width: 90%;
+}
+.input-group{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 2px solid rgb(94, 83, 93);
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.input-group label{
+   position: absolute;
+   top: 60%;
+   left: 13px;
+   transform: translateY(-50%);
+   color: rgb(94, 83, 93);
+   font-size: 20px;
+   transition: top 0.5s ease;
+    z-index: -1;
+}
+
+/* .input-group input:active~label{
+    top: 10px;
+    transition: top 0.5s ease;
+} */
+
+.input-group input:valid~label,
+.input-group input:focus~label {
+    top: 10px;
+    transition: top 0.5s ease;
+}
+
+.input-group input{
+    width: 100%;
+    height: 100%;
+    padding:0px 10px;
+    border: none;
+    margin: 10px 0px;
+    margin-top:20px ;
+    background: transparent;
+    outline: none;
+    font-size: 20px;
+    z-index: 1;
+ }
+
+ .remember{
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+ .remember a{
+   color: rgb(77, 101, 153);
+   text-decoration: none;
+   margin-left: 10px;
+}
+
+ .remember a:hover{
+   text-decoration: underline;
+}
+
+.remember label{
+   color: rgb(94, 83, 93);
+}
+
+.btn-login-window{
+    width: 70%;
+    padding: 10px 0px;
+    font-size: 20px;
+    background-color: rgb(97, 165, 125);
+    border: none;
+    margin: 0px;
+    margin-bottom: 20px;
+    position: relative;
+    left: 15%;
+}
+
+.btn-login-window:hover{
+    box-shadow: 0 0 0 2px rgb(97, 165, 125) ;
+
+}
+
+.div_registration{
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.elem-a{
+    color: rgb(94, 83, 93);
+}
+
+.elem-a a{
+    color: rgb(164, 172, 169);
+    text-decoration: none;
+}
+
+.modal-registration{
+    position: absolute;
+    width: 20%;
+    height:63% ;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    top: 20%;
+    left: 40%;
+    padding: 10px 10px;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    background: transparent;
+    transition-delay: 0s;
+    display: none;
+}
+
+.btn-Regist-window{
+    width: 70%;
+    padding: 10px 0px;
+    font-size: 20px;
+    background-color: rgb(77, 101, 153);
+    border: none;
+    margin: 0px;
+    margin-bottom: 20px;
+    position: relative;
+    left: 0px;
+}
+
+.btn-Regist-window:hover{
+    box-shadow: 0 0 0 2px rgb(77, 101, 153) ;
+}
+
+.btn-close-reg{
+    font-size: 25px;
+    width: 40px;
+    height: 30px;
+    border: none;
+    position:absolute;
+    right: 0px;
+    top: 0px;
+    overflow: hidden;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius:20px;
+    background-color: transparent;
+ 
+}
+
